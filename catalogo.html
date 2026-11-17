@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#542394">
+  <meta name="description" content="Explore o catálogo de produtos Pokémon TCG publicados pela Poke Amigos RP. Combos, blisters triplos e unitários com preço. Busque por coleção ou formato e faça o pedido pelo WhatsApp oficial.">
+  <title>Catálogo Pokémon TCG — Poke Amigos RP</title><link rel="icon" type="image/png" href="assets/images/logo-badge-192.png"><link rel="apple-touch-icon" href="assets/images/logo-badge-192.png"><script src="assets/js/theme.js"></script><link rel="stylesheet" href="assets/css/styles.css"><script defer src="assets/js/products.js"></script><script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="catalog">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a><div id="site-header"></div>
+  <main id="conteudo">
+    <section class="catalog-intro">
+      <div class="intro-art" aria-hidden="true"><img src="assets/images/banner-campfire.jpg" alt="" width="728" height="471" fetchpriority="high" decoding="async"><span class="firefly f1"></span><span class="firefly f2"></span><span class="firefly f3"></span><span class="firefly f4"></span><span class="firefly f5"></span></div>
+      <div class="container intro-grid">
+        <div class="intro-text"><nav class="breadcrumb" aria-label="Caminho da página"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Catálogo</span></nav><p class="eyebrow"><span class="promo-dot" aria-hidden="true"></span>BLACK MONTH NA POKE AMIGOS</p><h1>Um universo<br>pra <span class="gradient-text">colecionar.</span></h1><p class="intro-copy">Combos e blisters com preço de Black Month.<br>Escolheu? É só pedir pelo WhatsApp.</p>
+        <div class="intro-actions"><a class="button primary" href="catalogo.html?formato=combo#produtos">Ver combos em oferta <span aria-hidden="true">↗</span></a></div>
+        <ul class="intro-perks"><li data-best-discount="Até {n}% off nos combos">Combos em oferta</li><li>Pedido rápido pelo WhatsApp</li><li>Ribeirão Preto · SP</li></ul>
+        </div>
+      </div>
+    </section>
+    <section class="section container catalog-section" id="produtos" aria-label="Catálogo de produtos">
+      <div class="catalog-tools"><label class="search-field"><span class="search-symbol" aria-hidden="true"></span><span class="sr-only">Buscar produtos</span><input id="product-search" type="search" placeholder="Busque por produto ou coleção…" autocomplete="off"></label><label class="collection-select"><span>Coleção</span><select id="collection-filter"><option value="all">Todas as coleções</option><option value="caos-ascendente">Caos Ascendente</option><option value="escuridao-absoluta">Escuridão Absoluta</option></select></label></div>
+      <div class="filter-row"><div class="filter-chips" role="group" aria-label="Filtrar por formato"><button class="chip active" data-category="all" aria-pressed="true">Todos</button><button class="chip" data-category="combo" aria-pressed="false">Combos</button><button class="chip" data-category="blister-triplo" aria-pressed="false">Blister triplo</button><button class="chip" data-category="blister-unitario" aria-pressed="false">Blister unitário</button></div><p id="results-count" class="results-count" role="status" aria-live="polite"></p></div>
+      <div class="catalog-note"><span aria-hidden="true">ⓘ</span><p><strong>Black Month:</strong> preços do nosso catálogo oficial. Toque em “Pedir no WhatsApp” e a gente confirma o estoque, as artes sortidas e os itens dos combos.</p></div>
+      <div id="catalog-products" class="product-grid"></div>
+      <div id="empty-results" class="empty-results" hidden><span aria-hidden="true">✧</span><h2>Nenhuma carta nessa busca.</h2><p>Tente outro nome ou explore todas as coleções.</p><button id="clear-filters" class="button primary">Limpar filtros</button></div>
+      <noscript><p>Ative o JavaScript para usar busca e filtros. Você também pode <a href="https://www.instagram.com/pokeamigosrp/">ver as publicações no Instagram</a> ou <a href="https://wa.me/5516994451994">consultar o WhatsApp oficial</a>.</p></noscript>
+      <div class="pending-note"><span class="pending-icon" aria-hidden="true">✦</span><div><h2>Mais descobertas pelo caminho.</h2><p>Novidades chegam toda semana. Confira o catálogo completo no WhatsApp ou acompanhe o Instagram.</p></div><a class="text-link" href="https://wa.me/c/5516994451994" target="_blank" rel="noopener noreferrer">Ver catálogo no WhatsApp <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="container contact-banner has-art banner-community" id="comunidade" aria-labelledby="community-title">
+      <div class="banner-ambient" aria-hidden="true"><img src="assets/images/banner-gengar.jpg" alt="" width="739" height="415" loading="lazy" decoding="async"></div>
+      <div class="banner-art" aria-hidden="true"><img src="assets/images/banner-gengar.jpg" alt="" width="739" height="415" loading="lazy" decoding="async"></div>
+      <div class="banner-copy glass-panel">
+        <p class="community-badge"><img src="assets/images/logo-badge-192.png" alt="" width="192" height="192" loading="lazy"><span>Comunidade Poke Amigos</span><span class="live-dot" aria-hidden="true"></span><span class="badge-muted">no WhatsApp</span></p>
+        <h2 id="community-title">Colecione junto<br>com quem entende.</h2>
+        <p>Entre no nosso grupo de WhatsApp e converse com outros colecionadores: novidades em primeira mão, dicas de coleção e muito papo sobre Pokémon TCG.</p>
+        <ul class="community-perks"><li>Novidades em primeira mão</li><li>Dicas de coleção</li><li>Colecionadores como você</li></ul>
+        <div class="community-cta"><a class="button community-button" data-community><span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Entrar na comunidade <span class="cta-arrow" aria-hidden="true">↗</span></a><span class="community-note">Grátis · saia quando quiser</span></div>
+      </div>
+    </section>
+  </main><div id="site-footer"></div><div id="product-dialog-root"></div>
+</body>
+</html>

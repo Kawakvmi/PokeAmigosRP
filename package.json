@@ -1,0 +1,7 @@
+{
+  "name": "poke-amigos-rp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vitrine estática mobile-first da Poke Amigos RP, com catálogo verificável e contato oficial.",
+  "scripts": { "dev": "node server.mjs", "start": "node server.mjs", "check": "node --check assets/js/theme.js && node --check assets/js/products.js && node --check assets/js/app.js && node --check assets/js/shine.js && node --check server.mjs" }
+}
