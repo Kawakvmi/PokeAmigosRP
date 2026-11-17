@@ -829,3 +829,30 @@ img.pack-art { object-fit: contain; }
 .pending-note h2 { font-size: 20px; }
 .pending-note > .text-link { color: var(--purple); }
 
+
+/* =====================================================================
+   Faixa da marca: rolagem contínua + ponto neon percorrendo a borda.
+   ===================================================================== */
+.brand-ribbon { position: relative; --ribbon-neon: #9b50ce; --ribbon-glow: #b18ad9; }
+[data-theme="dark"] .brand-ribbon { --ribbon-neon: #fff2ff; --ribbon-glow: #c694f2; }
+.brand-ribbon .ribbon-track {
+  width: max-content; gap: 0; justify-content: flex-start;
+  animation: ribbon-scroll 48s linear infinite;
+  will-change: transform;
+}
+.brand-ribbon .ribbon-group { flex-shrink: 0; padding-right: 37px; }
+.brand-ribbon::after {
+  content: ''; position: absolute; bottom: 0; left: -140px;
+  width: 110px; height: 2px; border-radius: 2px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--ribbon-glow) 70%, var(--ribbon-neon));
+  box-shadow: 0 0 6px var(--ribbon-glow), 0 0 12px var(--ribbon-glow);
+  opacity: .85;
+  animation: ribbon-neon 7s cubic-bezier(.45, .05, .55, .95) infinite;
+}
+@keyframes ribbon-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes ribbon-neon {
+  0% { left: -140px; opacity: 0; }
+  8% { opacity: .85; }
+  92% { opacity: .85; }
+  100% { left: 100%; opacity: 0; }
+}
